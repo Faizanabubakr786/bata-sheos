@@ -1,0 +1,253 @@
+* {
+    padding: 0;
+    margin: 0;
+    font-family: montregular;
+   
+}
+body {
+   
+}
+
+@font-face {
+    font-family: montbold;
+    src: url("./fonts/Montserrat-Bold.ttf");
+}
+
+@font-face {
+    font-family: montregular;
+    src: url("./fonts/Montserrat-Regular.ttf");
+}
+
+
+.navbar {
+    height: 70.06px;
+    width: 100%;
+    border-bottom: 2px solid grey;
+    
+    background-color: white;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 0px 28px;
+    z-index: auto;
+    position: relative;
+}
+
+.right-box {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 40px;
+    font-size: 16px;
+}
+
+.right-box ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.right-box img {
+    height: 97%;
+    width: 92px;
+}
+.bata {
+    height: 24px;
+}
+
+.right-box ul li {
+    list-style: none;
+    margin-right: 25px;
+    text-align: center;
+    font-size: 21px;
+
+
+
+}
+.nav2 {
+    height: 72px;
+    border-bottom: 1px solid ;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.nav2-ul {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.nav2-ul li {
+    list-style: none;
+   
+    font-size: 14px;
+    text-transform: uppercase;
+    margin: 6px 20px 10px 0px  ;
+}
+.int {
+    height: 22px;
+    width: 252px;
+    
+    font-size: 14px;
+    border: none;
+    border-bottom: 1px solid grey;
+}
+.nav2 i {
+    font-size: 20px;
+   
+}
+.baner {
+    width: 100%;
+    height: 100%;
+    margin-top: 10px;
+    margin: left -100%;
+    margin: right-100%;
+
+}
+.baner img {
+    width: 100%;
+    height: 100%;
+object-fit: cover;
+}
+.small-img {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 100%;
+    
+    flex-wrap: wrap;
+    margin: 17px 0px;
+   
+    
+}
+.fa-solid.fa-bars{
+    margin-left: -9px;
+}
+.fa-solid.fa-magnifying-glass {
+     margin-left: 19px;
+}
+
+.small {
+    width: 32%;
+    height: 48%;
+}
+.small img {
+    height: 100%;
+    width: 100%;
+}
+.left-box {
+    display: flex;
+    align-items: center;
+    display: hidden;
+    width: 25%;
+    height: 100%;
+}
+.left-box i {
+    font-size: 24px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+
+/* laptop */
+@media screen and (min-width: 768px) {
+    .left-box {
+        display: none;
+        
+    }
+    .nav2 {
+        display: flex;
+        flex: wrap; 
+        margin: 0px 20px;   
+    }
+    
+    
+
+}
+
+/* mobile */
+@media screen and (max-width: 431px ) {
+    
+     .navbar {
+        justify-content: space-evenly;
+     }
+    
+     .rightli {
+        margin-right: 11px;
+     }
+     .left-box i {
+        margin-left: -9px;
+        font-size: 24px;
+        font-weight: 300px;
+     }
+     .fa-solid.fa-magnifying-glass {
+        margin-left: 21px;
+     }
+     .baner{
+        height: 491.91px;
+     }
+     .small {
+        width: 47%;
+        height: 133.92px;
+        margin-bottom: 2%;
+     }
+     .small-img {
+        gap: 2%;
+     }
+     
+}
+
+/* tablet */
+@media screen and (min-width:431px) and (max-width:768px) {
+     .bigimg {
+        height: 591.74px;
+     }
+     .small {
+        width: 47%;
+        height: 163.92px;
+        margin-bottom: 2%;
+     }
+     .small-img {
+        gap: 2%;
+     }
+}
+
+/* minimum for laptop */
+@media screen and (max-width:767px){
+    .r1,.r2,.r4 {
+        display: none;
+    }
+     .nav2 {
+        display: none;
+     }
+     .right-box {
+        margin-right:11px ;
+     }
+     .left-box {
+        display: visible;
+     }
+     .small {
+        width: 47%;
+        height: 193.92px;
+        margin-bottom: 2%;
+     }
+     .small-img {
+        gap: 2%;
+     }
+     
+}
+
+/*full screen  */
+@media screen and (min-width:992px) {
+   .left-box {
+    display: hidden;
+   
+   }
+    .baner {
+        height:760px;
+     }
+     .left-box {
+        display: hidden;
+     }
